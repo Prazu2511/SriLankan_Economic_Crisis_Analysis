@@ -7,20 +7,17 @@ The aim is to understand the relationships between these factors and their impac
 
 ---
 
+## Pre-processing Data
 
-## Exploratory Data Analysis (EDA)
-
-### Preprocessing Data
-
-#### Data Preparation and Transformation
+1. ### Data Preparation and Transformation
 
 **Dataset Download:**
 - Downloaded the dataset as an .xls file from the Central Bank of Sri Lanka
-  
+
 **Conversion to CSV:**
 - Converted the .xls file into a .csv file for easier manipulation.
-  
-**Reading the Data:**
+
+**Loading the Data:**
 - Loaded the CSV file into a pandas DataFrame.
 
 **Dropping Unnecessary Columns:**
@@ -32,7 +29,19 @@ The aim is to understand the relationships between these factors and their impac
 **Dropping Additional Columns:**
 - Identified and dropped more unnecessary columns after transposing.
 
-#### Handling Missing Values
+**Renaming Columns:**
+- Renamed columns to shorter and more descriptive names for easier access.
+
+2. ### Transformed Dataset Description
+The dataset contains the following columns:
+- **Exports**: Value of goods and services exported.
+- **Imports**: Value of goods and services imported.
+- **Agriculture**: Contribution of agriculture to the economy.
+- **Tourism**: Revenue generated from tourism.
+- **Revenue**: Income from taxes.
+- **External Debts**: Total external debt obligations.
+
+3. ### Handling Missing Values
 
 **Checking for Null Values:**
 - Detected missing values in the dataset.
@@ -41,10 +50,7 @@ The aim is to understand the relationships between these factors and their impac
 - Filled null values with the median of their respective columns, assuming the data might be skewed.
 
 
-#### Data Cleaning and Visualization
-
-**Renaming Columns:**
-- Renamed columns to shorter and more descriptive names for easier access.
+4. ### Data Visualization
 
 **Line Plots:**
 - Plotted line plots for years against key indicators such as:
@@ -52,25 +58,32 @@ The aim is to understand the relationships between these factors and their impac
 - Imports
 - Exports
 - Revenue
-  
-**Example library used:** 
-Matplotlib and Seaborn.
+
+**Exploratory Data Analysis (EDA):**
+- Analyze trends using visualization tools like Matplotlib and Seaborn.
+- Identify correlations between variables using a heatmap.
 
 **Correlation Heatmap:**
 Generated a correlation heatmap to observe relationships between all columns.
 
+**Modified Dataset:**
+- Saving the dataset as a csv file.
+
+
+## Regression Analysis
+
+1. ### Post-EDA Steps: 
+   
+**Feature Scaling:**
+
+- Used StandardScaler to standardize the dataset by scaling features to have a mean of 0 and a standard deviation of 1.
+- This is essential for regression techniques like Lasso and Ridge, as they are sensitive to the scale of input data.
 
 
 
-### Dataset Description
-The dataset contains the following columns:
-- **Exports**: Value of goods and services exported.
-- **Imports**: Value of goods and services imported.
-- **Agriculture**: Contribution of agriculture to the economy.
-- **Tourism**: Revenue generated from tourism.
-- **Tax Revenue**: Income from taxes.
-- **Non-Tax Revenue**: Income from non-tax sources.
-- **External Debts**: Total external debt obligations.
+
+
+
 
 ---
 
@@ -91,8 +104,6 @@ The dataset contains the following columns:
    pip install -r requirements.txt
   
 
-### Dataset
-Ensure the dataset file (`sri_lankan_economy.csv`) is placed in the project directory.
 
 ---
 
@@ -116,9 +127,7 @@ Ensure the dataset file (`sri_lankan_economy.csv`) is placed in the project dire
 
 ## Methodology
 
-## Exploratory Data Analysis (EDA)
-- Analyze trends using visualization tools like Matplotlib and Seaborn.
-- Identify correlations between variables using a heatmap.
+
 
 ### 2. Preprocessing
 - Handle missing values.
