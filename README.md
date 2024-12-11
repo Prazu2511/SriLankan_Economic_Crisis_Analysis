@@ -138,7 +138,8 @@ Generated a correlation heatmap to observe relationships between all columns.
 
 ---
 
-## Results
+## Results<img width="809" alt="Screenshot 2024-12-11 at 11 29 53 PM" src="https://github.com/user-attachments/assets/b8a41e9b-9a73-47e0-985e-2c208dcaccb4" />
+
 - Key insights about the economic indicators and their impact on the crisis.
 - Model evaluation results with visualizations.
 
