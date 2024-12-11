@@ -9,27 +9,27 @@ The aim is to understand the relationships between these factors and their impac
 
 ## Pre-processing Data
 
-### 1. Data Preparation and Transformation
+### Data Preparation and Transformation
 
-**Dataset Download:**
+**1. Dataset Download:**
 - Downloaded the dataset as an .xls file from the Central Bank of Sri Lanka
 
-**Conversion to CSV:**
+**2. Conversion to CSV:**
 - Converted the .xls file into a .csv file for easier manipulation.
 
-**Loading the Data:**
+**3. Loading the Data:**
 - Loaded the CSV file into a pandas DataFrame.
 
-**Dropping Unnecessary Columns:**
+**4. Dropping Unnecessary Columns:**
 - Identified and removed columns that were not relevant to the analysis.
 
-**Transposing the Data:**
+**5. Transposing the Data:**
 - Transposed the DataFrame to make columns into rows (years as rows) and rows into columns.
 
-**Dropping Additional Columns:**
+**6. Dropping Additional Columns:**
 - Identified and dropped more unnecessary columns after transposing.
 
-**Renaming Columns:**
+**7. Renaming Columns:**
 - Renamed columns to shorter and more descriptive names for easier access.
 
 ### 2. Transformed Dataset Description
@@ -43,10 +43,10 @@ The dataset contains the following columns:
 
 ### 3. Handling Missing Values
 
-**Checking for Null Values:**
+**3.1 Checking for Null Values:**
 - Detected missing values in the dataset.
 
-**Replacing Missing Values:**
+**3.2 Replacing Missing Values:**
 - Filled null values with the median of their respective columns, assuming the data might be skewed.
 
 
