@@ -132,16 +132,37 @@ Generated a correlation heatmap to observe relationships between all columns.
 
 ## Future Scope
 1. Expand the dataset with more indicators.
-2. Use advanced regression models such as ElasticNet.
+2. further tuning (e.g., adjusting the alpha parameter) or using a hybrid model like ElasticNet may improve results.
 3. Build predictive models using time-series analysis.
 4. Create an interactive dashboard for visualizing insights.
 
 ---
 
-## Results<img width="809" alt="Screenshot 2024-12-11 at 11 29 53 PM" src="https://github.com/user-attachments/assets/b8a41e9b-9a73-47e0-985e-2c208dcaccb4" />
+## Results
 
-- Key insights about the economic indicators and their impact on the crisis.
-- Model evaluation results with visualizations.
+**Lasso Model:**
+- Suitable for feature selection as it can shrink less important features to zero.
+- Performs well but might oversimplify by removing less significant predictors.
+- Effective when you suspect that only a subset of features significantly impacts the target.
+<img width="814" alt="Screenshot 2024-12-11 at 11 29 34 PM" src="https://github.com/user-attachments/assets/2922680d-fa10-4c54-aaf9-122802fb8572" />
+
+
+**Ridge Model:**
+- Handles multicollinearity better by penalizing large coefficients, making it robust against overfitting.
+- Provides a better fit for the majority of the data but might not handle outliers as effectively.
+<img width="809" alt="Screenshot 2024-12-11 at 11 29 53 PM" src="https://github.com/user-attachments/assets/b8a41e9b-9a73-47e0-985e-2c208dcaccb4" />
 
 ---
+
+## Conclusion:
+
+- Use Lasso when simplicity and feature selection are important.
+- Use Ridge when you aim for a more robust overall fit, especially in the presence of multicollinearity.
+ 
+
+
+
+
+
+
 
