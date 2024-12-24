@@ -81,14 +81,17 @@ Generated a correlation heatmap to observe relationships between all columns.
 
 ### 6. Regression Models:
 
-- As multicollinearity exists, Lasso and Ridge Regression models are used.
+- As multicollinearity exists, Lasso and Ridge Regularization models are used.
+  **6.1 Linear Regression model:**
+  - Performed Linear Regression on the attributes to understand the relationship between the features.
+  - Used Standard Scaler to normalize the values.
   
-**6.1 Lasso Regression:**
-- Performed Lasso Regression, which adds an L1 penalty to reduce less important feature coefficients to zero, effectively performing feature selection.
+**6.2 Lasso Regularization:**
+- Performed Lasso Regularization, which adds an L1 penalty to reduce less important feature coefficients to zero, effectively performing feature selection.
 - Hyperparameter alpha was tuned for optimal performance.
 
-**6.2 Ridge Regression:**
-- Performed Ridge Regression, which adds an L2 penalty to shrink feature coefficients, reducing multicollinearity and overfitting.
+**6.3 Ridge Regularization:**
+- Performed Ridge Regularization, which adds an L2 penalty to shrink feature coefficients, reducing multicollinearity and overfitting.
 - Hyperparameter alpha was tuned similarly to Lasso.
 
 ### 7. Evaluation Metrics Calculation:
@@ -140,14 +143,14 @@ Generated a correlation heatmap to observe relationships between all columns.
 
 ## Results
 
-**Lasso Model:**
+**Lasso Model (L1 Regularization):**
 - Suitable for feature selection as it can shrink less important features to zero.
 - Performs well but might oversimplify by removing less significant predictors.
 - Effective when you suspect that only a subset of features significantly impacts the target.
 <img width="814" alt="Screenshot 2024-12-11 at 11 29 34 PM" src="https://github.com/user-attachments/assets/2922680d-fa10-4c54-aaf9-122802fb8572" />
 
 
-**Ridge Model:**
+**Ridge Model (L2 Regularization):**
 - Handles multicollinearity better by penalizing large coefficients, making it robust against overfitting.
 - Provides a better fit for the majority of the data but might not handle outliers as effectively.
 <img width="809" alt="Screenshot 2024-12-11 at 11 29 53 PM" src="https://github.com/user-attachments/assets/b8a41e9b-9a73-47e0-985e-2c208dcaccb4" />
