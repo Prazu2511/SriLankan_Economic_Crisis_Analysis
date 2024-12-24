@@ -82,9 +82,10 @@ Generated a correlation heatmap to observe relationships between all columns.
 ### 6. Regression Models:
 
 - As multicollinearity exists, Lasso and Ridge Regularization models are used.
-  **6.1 Linear Regression model:**
-  - Performed Linear Regression on the attributes to understand the relationship between the features.
-  - Used Standard Scaler to normalize the values.
+
+**6.1 Linear Regression model:**
+- Performed Linear Regression on the attributes to understand the relationship between the features.
+- Used Standard Scaler to normalize the values.
   
 **6.2 Lasso Regularization:**
 - Performed Lasso Regularization, which adds an L1 penalty to reduce less important feature coefficients to zero, effectively performing feature selection.
